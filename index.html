@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Pizzeria Upper</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
+
+</head>
+
+<style>
+.imagenes {margin-bottom:30px;cursor:pointer;margin-left:30px;}
+.seccionpizzas {
+  background-image: url('Images/fondogris.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+h1,h2,h3 {
+  font-weight:bold;
+}
+.carousel-item img {
+  max-height: 300px;
+  max-width: 100%;
+}
+
+.btn-primary {
+  text-transform: uppercase;
+font-weight: 600;
+padding: 8px 20px;
+word-break: break-word;
+white-space: normal;
+background-color:#E31E24;
+color:white;
+font-size:18px;
+border-radius:10px;
+}
+
+.btn-primary:hover {
+  background-color:#000;
+}
+
+
+.upper {
+  text-transform:uppercase;
+  font-size:20px;
+  font-weight:1px;
+}
+
+.rojo {
+color:#E31E24;
+font-weight:bold;
+}
+
+.upper:hover {
+color:#E31E24;
+font-weight:bold;
+}
+
+.dropdown-item {
+  font-size:15px;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4Q1Xxd9JiH4sKww-O34A3Hnifjl9R0BXGbA&usqp=CAU" alt="Home button logo" width="55" height="60">
+        </a>
+        <!--responsive nav button (toggler) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto"> <!-- Se agrega la clase mx-auto -->
+            <li class="nav-item dropdown">
+              <a class="upper rojo nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"aria-expanded="false">
+                Platos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Pizzas</a>
+                </li>
+        
+                <li>
+                  <a class="dropdown-item" href="#">Ensaladas</a>
+                </li>
+        
+                <li>
+                  <a class="dropdown-item" href="productos.html">Aperitivos</a>
+                </li>
+        
+                <li>
+                  <a class="dropdown-item" href="#">Pasta</a>
+                </li>
+        
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+        
+              </ul>
+            </li>
+        
+            <li class="nav-item dropdown">
+              <a class="upper nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"aria-expanded="false">
+                Bebidas y varios
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Vinos</a>
+                </li>
+        
+                <li>
+                  <a class="dropdown-item" href="#">Cervezas</a>
+                </li>
+        
+                <li>
+                  <a class="dropdown-item" href="#">Hielo</a>
+                </li>
+        
+                <li>
+                  <a class="dropdown-item" href="#">Refrescos</a>
+                </li>
+        
+                <li>
+                  <a class="dropdown-item" href="#">Salsas</a>
+                </li>
+        
+                <li>
+                  <a class="dropdown-item" href="#">Cafes</a>
+                </li>
+        
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="upper nav-link" href="#" role="button" data-bs-toggle="dropdown"aria-expanded="false">
+                Reservas
+              </a>
+          </ul>
+        </div>
+       
+
+
+          </ul>
+          <button class="btn-primary btn-lng">
+            933 773 821
+          </button>
+          <form class="d-flex">
+            <div class="d-flex">
+              <div class="input-group">
+                <button type="button" class="btn bg-light" id="searchButton">
+                  <i class="bi bi-search"></i>
+                </button>
+                <div id="searchInputContainer" class="ms-2 d-none">
+                  <input class="form-control" type="text" placeholder="Busque en nuestro cátalago" aria-label="Search">
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+              <i class="bi bi-person-fill"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-lg-end">
+              <li><a class="dropdown-item oculto2" href="logout.html">Mi Cuenta</a></li>
+              <li><a class="dropdown-item oculto2" href="logout.html">Cerrar Sesión</a></li>
+              <li><a class="dropdown-item oculto" href="Registro.html">Registrarse</a></li>
+              <li><a class="dropdown-item oculto" href="IniciarSesion.html">Iniciar sesión</a></li>
+              <li><a class="dropdown-item ocultoadmin" href="startmin-master/index.html">Backend</a></li>
+              <li><a class="dropdown-item" href="#">Carrito</a></li>
+            </ul>
+          </div>
+          
+          
+          
+          
+
+
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Carrusel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/Images/headers.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/Images/Menu-Header-Image-1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/Images/headers.jpg"  class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+
+
+  </header>
+  <section class="seccionpizzas">
+    <!-- Categorias -->
+    <div class="fondo">
+      <br>
+      <br>
+      <br>
+    <h3 class="text-center">Nuestros Platos</h3>
+    <div class="container">
+      <div class="row imagenes">
+        <div class="col-sm-4">
+          
+          <img src="Images/4quesos.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-sm-4">
+          <img src="Images/ensaladas.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-sm-4">
+          <img src="Images/aperitivos.jpg" alt="" class="img-fluid" href="productos.html">
+        </div>
+      </div>
+      <div class="row imagenes">
+        <div class="col-sm-4">
+          <img src="Images/pasta.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-sm-4">
+          <img src="Images/postres.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-sm-4">
+          <img src="Images/helados.jpg" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div class="row imagenes">
+        <div class="col-sm-4">
+          <img src="Images/cafes.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-sm-4">
+          <img src="Images/vino.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-sm-4">
+          <img src="Images/bebidas.jpg" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <br>
+</section>
+<section class="fade-in-section">
+    <!-- Seccion Reseña y Historia-->
+   <br>
+   <br>
+   <br>
+   <div class="container d-flex align-items-center">
+    <div class="text float-md-start">
+      <h1>Restaurante Upper Pizza</h1>
+      <h2>Pizzeria Upper - Desde 1990</h2>
+      <p>
+        En nuestras pizzerías de Upper Pizza, nos enfocamos en brindar la mejor calidad en cada uno de nuestros platos. Utilizamos ingredientes cuidadosamente seleccionados para asegurarnos de que cada pizza tenga un sabor y textura excepcionales. Nuestros profesionales de la cocina están capacitados para crear una experiencia única al comer en nuestras instalaciones.
+      </p>
+      <img src="Images/google.png" alt="" width="250" height="180">
+      <img src="Images/premiopizza.webp" alt="" width="180" height="180">
+      <img src="Images/travelers2023.webp" class="align-items-center" alt="" width="250" height="180">
+    </div>
+    <img src="Images/restaurante.jpg" alt="" class="float-md-end" style="max-width: 600px; max-height: 600px;">
+  </div>
+ <br>
+ <div class="container">
+  <br>
+ <h2 class="text-danger">Si te gusta la comida Italiana, somos la mejor opción</h2>
+ <br>
+</div>
+
+      <footer class="text-white text-center text-lg-start bg-dark">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row mt-4">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Pizzeria Upper</h5>
+    
+              <p>
+                En nuestra pizzería, nos enorgullece servir pizzas que deleitan el paladar y satisfacen el hambre. Nos esforzamos por ofrecer un ambiente acogedor y amigable 
+                para que puedas disfrutar de una experiencia gastronómica verdaderamente italiana.
+              </p>
+    
+
+              <div class="mt-4">
+                <!-- Facebook -->
+                <a type="button" class="btn btn-floating btn-light btn-lg"><i class="bi bi-facebook"></i></a>
+                <!-- Dribbble -->
+                <a type="button" class="btn btn-floating btn-light btn-lg"><i class="bi bi-instagram"></i></a>
+                <!-- Twitter -->
+                <a type="button" class="btn btn-floating btn-light btn-lg"><i class="bi bi-twitter"></i></a>
+                <!-- Google + -->
+                <a type="button" class="btn btn-floating btn-light btn-lg"><i class="bi bi-youtube"></i></a>
+                <!-- Linkedin -->
+              </div>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+           
+              <h5 class="text-uppercase mb-4 pb-1">Datos de Contacto</h5>
+              <div class="form-outline form-white mb-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.9146159617358!2d2.0701870126252246!3d41.35420957118439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4995a471a9c99%3A0x60d3b8e237c100b!2sRambla%20de%20Josep%20Anselm%20Clav%C3%A9%2C%2008940%20Cornell%C3%A0%20de%20Llobregat%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1683205929366!5m2!1ses!2ses" width="380" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+    
+              <ul class="fa-ul" style="margin-left: 1.65em;">
+        
+                
+      
+                <li class="mb-3">
+                  <i class="bi bi-shop"></i></span><span class="ms-2">Rambla Anselm Clave 08940 Cornellà de Llobregat</span>
+                </li>
+                <li class="mb-3">
+                <i class="bi bi-envelope"></i></span><span class="ms-2">support@pizzeriaupper.com</span>
+                </li>
+                <li class="mb-3">
+                 <i class="bi bi-telephone"></i></span><span class="ms-2">+ 93 3773821</span>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Horarios de Apertura</h5>
+    
+              <table class="table text-center text-white">
+                <tbody class="fw-normal">
+                  <tr>
+                    <td>Lunes - Jueves:</td>
+                    <td>8am - 9pm</td>
+                  </tr>
+                  <tr>
+                    <td>Viernes - Sábado:</td>
+                    <td>8am - 1am</td>
+                  </tr>
+                  <tr>
+                    <td>Domingo:</td>
+                    <td>9am - 10pm</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+Pizzeria Upper
+<br>
+<br>
+<img src="Images/pagos.png" alt="">
+        </div>
+        <!-- Copyright -->
+      </footer>
+    
+    </div>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+    <script src="js/Visitas.js"></script>
+    <script src="js/rol-usuario.js"></script>
+    <script>
+      const searchButton = document.querySelector('#searchButton');
+const searchInputContainer = document.querySelector('#searchInputContainer');
+const searchInput = searchInputContainer.querySelector('input');
+
+searchButton.addEventListener('click', function() {
+  searchInputContainer.classList.toggle('d-none');
+  searchInput.focus();
+});
+    </script>
+    <script>
+// Obtener todos los elementos con la clase "ocultoadmin"
+const elementosOcultos = document.querySelectorAll('.ocultoadmin');
+
+// Ocultar cada elemento encontrado
+elementosOcultos.forEach(elemento => {
+  elemento.classList.add('d-none'); // Agregar la clase "d-none" de Bootstrap para ocultar el elemento
+});
+
+    </script>
+
+<script>
+  // Obtener todos los elementos con la clase "ocultoadmin"
+  const elementosOcultos2 = document.querySelectorAll('.oculto2');
+  
+  // Ocultar cada elemento encontrado
+  elementosOcultos2.forEach(elemento => {
+    elemento.classList.add('d-none'); // Agregar la clase "d-none" de Bootstrap para ocultar el elemento
+  });
+  
+      </script>
+    <script src="js/rol-usuario-menus.js"></script>
+ 
+</body>
+
+
+</html>

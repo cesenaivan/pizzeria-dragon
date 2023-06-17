@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
+
+</head>
+
+<style>
+.imagenes {margin-bottom:20px;cursor:pointer;}
+.seccionpizzas {
+  background-image: url('Images/fondogris.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+
+h1,h2,h3 {
+  font-weight:bold;
+}
+
+.gris {
+  background-color: gray;
+}
+
+select {
+    width: 50px; /* Define el ancho deseado */
+  }
+
+
+
+</style>
+
+<script>
+
+</script>
+<body>
+  <header>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/Images/logo.png" alt="Home button logo" width="30" height="24">
+        </a>
+        <!--responsive nav button (toggler) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"aria-expanded="false">
+                Platos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Pizzas</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">Ensaladas</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">Aperitivos</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">Pasta</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"aria-expanded="false">
+                Bebidas y varios
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Vinos</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">Cervezas</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">Hielo</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">Refrescos</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">Salsas</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">Cafes</a>
+                </li>
+
+              </ul>
+            </li>
+
+
+
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle dropleft" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-three-dots-vertical"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Option 1</a></li>
+              <li><a class="dropdown-item" href="#">Option 2</a></li>
+              <li><a class="dropdown-item" href="#">Option 3</a></li>
+            </ul>
+          </div>
+          
+          
+
+
+        </div>
+      </div>
+    </nav>
+
+
+    
+
+    <!-- Carrusel -->
+  </header>
+  <section>
+    <div class="d-flex justify-content-end m-3">
+      <div class="bg-light d-flex align-items-center w-100">
+        <p class="mb-0 ms-auto">Ordenar por:</p>
+        <select class="form-select w-30" aria-label="Default select example">
+          <option selected>Relevancia</option>
+          <option value="1">Nombre A Z</option>
+          <option value="2">Nombre Z A</option>
+          <option value="3">Precio: De más barato a más caro</option>
+          <option value="4">Precio: De más caro a más barato</option>
+        </select>
+      </div>
+    </div>
+  </section>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card" style="width: 100%;">
+        <img src="Images/bolasarroz.png" class="card-img-top" style="height: 300px;" alt="...">
+        <div class="card-body">
+          <p class="card-text">Bolas de Arroz</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card" style="width: 100%;">
+        <img src="Images/focaccia.jpg" class="card-img-top" style="height: 300px;" alt="...">
+        <div class="card-body">
+          <p class="card-text">Focaccia con Tomillo</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card" style="width: 100%;">
+        <img src="Images/langostinosajo.jpg" class="card-img-top" style="height: 300px;" alt="...">
+        <div class="card-body">
+          <p class="card-text">Langostinos con Ajo y Perejil</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <br>
+  
+  
+ </div>
+</div>
+
+      <footer class="text-white text-center text-lg-start bg-dark">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row mt-4">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Pizzeria Upper</h5>
+    
+              <p>
+                En nuestra pizzería, nos enorgullece servir pizzas que deleitan el paladar y satisfacen el hambre. Nos esforzamos por ofrecer un ambiente acogedor y amigable 
+                para que puedas disfrutar de una experiencia gastronómica verdaderamente italiana.
+              </p>
+    
+
+              <div class="mt-4">
+                <!-- Facebook -->
+                <a type="button" class="btn btn-floating btn-light btn-lg"><i class="bi bi-facebook"></i></a>
+                <!-- Dribbble -->
+                <a type="button" class="btn btn-floating btn-light btn-lg"><i class="bi bi-instagram"></i></a>
+                <!-- Twitter -->
+                <a type="button" class="btn btn-floating btn-light btn-lg"><i class="bi bi-twitter"></i></a>
+                <!-- Google + -->
+                <a type="button" class="btn btn-floating btn-light btn-lg"><i class="bi bi-youtube"></i></a>
+                <!-- Linkedin -->
+              </div>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+           
+              <h5 class="text-uppercase mb-4 pb-1">Datos de Contacto</h5>
+              <div class="form-outline form-white mb-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.9146159617358!2d2.0701870126252246!3d41.35420957118439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4995a471a9c99%3A0x60d3b8e237c100b!2sRambla%20de%20Josep%20Anselm%20Clav%C3%A9%2C%2008940%20Cornell%C3%A0%20de%20Llobregat%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1683205929366!5m2!1ses!2ses" width="380" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+    
+              <ul class="fa-ul" style="margin-left: 1.65em;">
+        
+                
+      
+                <li class="mb-3">
+                  <i class="bi bi-shop"></i></span><span class="ms-2">Rambla Anselm Clave 08940 Cornellà de Llobregat</span>
+                </li>
+                <li class="mb-3">
+                <i class="bi bi-envelope"></i></span><span class="ms-2">support@pizzeriaupper.com</span>
+                </li>
+                <li class="mb-3">
+                 <i class="bi bi-telephone"></i></span><span class="ms-2">+ 93 3773821</span>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Horarios de Apertura</h5>
+    
+              <table class="table text-center text-white">
+                <tbody class="fw-normal">
+                  <tr>
+                    <td>Lunes - Jueves:</td>
+                    <td>8am - 9pm</td>
+                  </tr>
+                  <tr>
+                    <td>Viernes - Sábado:</td>
+                    <td>8am - 1am</td>
+                  </tr>
+                  <tr>
+                    <td>Domingo:</td>
+                    <td>9am - 10pm</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+Pizzeria Upper
+<br>
+<br>
+<img src="Images/pagos.png" alt="">
+        </div>
+        <!-- Copyright -->
+      </footer>
+    
+    </div>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
